@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html" class="logo logo--header"
+          >Dev<span class="logo__element--black">Studio</span></a
+        >
+
+        <button
+          type="button"
+          class="header__button--burger"
+          aria-expanded="false"
+          aria-label="header__menu"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use
+              class="header__icon header__icon--open"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="header__icon header__icon--close"
+              href="./images/symbol-defs.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="header__menu" data-menu>
+          <nav class="header__nav">
+            <ul class="header__list list">
+              <li class="header__items">
+                <a href="./index.html" class="header__link">Студія</a>
+              </li>
+              <li class="header__items">
+                <a
+                  href="./portfolio.html"
+                  class="header__link header__link--current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header__items">
+                <a href="" class="header__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__feedback">
+            <ul class="header__list list header__list--contacts">
+              <li class="header__items header__items--contacts">
+                <a href="mailto:info@devstudio.com" class="header__link--inf">
+                  <svg class="header__svg header__svg--email">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header__items header__items--contacts">
+                <a href="tel:+380961111111" class="header__link--inf">
+                  <svg class="header__svg header__svg--phone">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header__list list header__list--networks">
+              <li class="header__networks">
+                <a href="" class="header__link">Instagram</a>
+              </li>
+              <li class="header__networks">
+                <a href="" class="header__link">Twitter</a>
+              </li>
+              <li class="header__networks">
+                <a href="" class="header__link">Facebook</a>
+              </li>
+              <li class="header__networks">
+                <a href="" class="header__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+      <!-- Основной контент -->
+      <section class="portfolio">
+        <h1 class="portfolio__title">Портфоліо</h1>
+        <div class="portfolio__container">
+          <!-- Радио-кнопки -->
+          <div class="portfolio__filter">
+            <ul class="filter list">
+              <li class="filter__item">
+                <button
+                  type="button"
+                  class="filter__button filter__button--active"
+                >
+                  Усі
+                </button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Веб-сайти</button>
+              </li>
+
+              <li class="filter__item">
+                <button type="button" class="filter__button">Додатки</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+          <div class="porfolio__content">
+            <ul class="project-cards list">
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <!--<img src="./images/21.jpg" alt="Картинка которая описывает суть проекта"  class="project-cards__img">-->
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/21.webp 1x, ./images/21@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/21.jpg 1x, ./images/21@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/21.webp 1x, ./images/21@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/21.jpg 1x, ./images/21@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/21.webp 1x, ./images/21@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/21.jpg 1x, ./images/21@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/21.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію чи приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Технокряк</h2>
+                    <p class="project-cards__category">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/22.webp 1x, ./images/22@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/22.jpg 1x, ./images/22@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/22.webp 1x, ./images/22@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/22.jpg 1x, ./images/22@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/22.webp 1x, ./images/22@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/22.jpg 1x, ./images/22@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/22.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="project-cards__category">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/23.webp 1x, ./images/23@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/23.jpg 1x, ./images/23@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/23.webp 1x, ./images/23@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/23.jpg 1x, ./images/23@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/23.webp 1x, ./images/23@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/23.jpg 1x, ./images/23@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/23.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Ресторан Seafood</h2>
+                    <p class="project-cards__category">Додаток</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/24.webp 1x, ./images/24@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/24.jpg 1x, ./images/24@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/24.webp 1x, ./images/24@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/24.jpg 1x, ./images/24@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/24.webp 1x, ./images/24@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/24.jpg 1x, ./images/24@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/24.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Проект Prime</h2>
+                    <p class="project-cards__category">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/25.webp 1x, ./images/25@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/25.jpg 1x, ./images/25@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/25.webp 1x, ./images/25@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/25.jpg 1x, ./images/25@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/25.webp 1x, ./images/25@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/25.jpg 1x, ./images/25@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/25.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Проєкт Boxes</h2>
+                    <p class="project-cards__category">Додаток</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/26.webp 1x, ./images/26@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/26.jpg 1x, ./images/26@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/26.webp 1x, ./images/26@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/26.jpg 1x, ./images/26@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/26.webp 1x, ./images/26@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/26.jpg 1x, ./images/26@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/26.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name" lang="en">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="project-cards__category">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/27.webp 1x, ./images/27@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/27.jpg 1x, ./images/27@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/27.webp 1x, ./images/27@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/27.jpg 1x, ./images/27@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/27.webp 1x, ./images/27@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/27.jpg 1x, ./images/27@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/27.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Видання Limited Edition</h2>
+                    <p class="project-cards__category">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/28.webp 1x, ./images/28@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/28.jpg 1x, ./images/28@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/28.webp 1x, ./images/28@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/28.jpg 1x, ./images/28@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/28.webp 1x, ./images/28@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/28.jpg 1x, ./images/28@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/28.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name">Проєкт LAB</h2>
+                    <p class="project-cards__category">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="project-cards__item">
+                <a href="" class="project-cards__link">
+                  <div class="project-cards__content--top">
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/29.webp 1x, ./images/29@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="./images/29.jpg 1x, ./images/29@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/29.webp 1x, ./images/29@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="./images/29.jpg 1x, ./images/29@2x.jpg 2x"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/29.webp 1x, ./images/29@2x.webp 2x"
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/29.jpg 1x, ./images/29@2x.jpg 2x"
+                      />
+
+                      <img
+                        src="./images/29.jpg"
+                        alt="Картинка которая описывает суть проекта"
+                        class="project-cards__img"
+                      />
+                    </picture>
+
+                    <div class="project-cards__overlay">
+                      <p class="project-cards__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="project-cards__content--bottom">
+                    <h2 class="project-cards__name" lang="en">
+                      Growing Business
+                    </h2>
+                    <p class="project-cards__category">Додаток</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- подвал -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__group">
+          <div class="footer__content footer__content--right">
+            <a href="./index.html" class="logo"
+              >Dev<span class="logo__element--white">Studio</span></a
+            >
+            <address class="footer__address">
+              <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__content footer__content--networks">
+            <p class="footer__text--networks">приєднуйтесь</p>
+            <ul class="networks list">
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link--footer">
+                  <svg
+                    class="networks__svg networks__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link--footer">
+                  <svg
+                    class="networks__svg networks__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link--footer">
+                  <svg
+                    class="networks__svg networks__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link--footer">
+                  <svg
+                    class="networks__svg networks__svg--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__content footer__content--left">
+          <label for="email-footer" class="footer__label">
+            Підпишіться на розсилку</label
+          >
+          <div class="footer__content-button-input">
+            <input
+              type="email"
+              id="email-footer"
+              class="footer__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer__button">
+              Підписатися
+              <svg class="footer__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
